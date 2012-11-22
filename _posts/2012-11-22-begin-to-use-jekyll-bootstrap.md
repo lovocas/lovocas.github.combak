@@ -31,10 +31,12 @@ tags: [blog, life]
 其次，用ssh-keygen生成密钥文件，把对应的公钥文件导入Github，在Github的用户设置里做相应的设置。
 
 第三，下载JB并使用
+
     git clone https://github.com/plusjade/jekyll-bootstrap.git USERNAME.github.com
     cd USERNAME.github.com
     git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
     git push origin master
+
 第四、完成
 
 ## 后记
