@@ -7,7 +7,7 @@ tags: [blog, life, jekyllybootstrap, github]
 ---
 {% include JB/setup %}
 
-[Image Test](http://mouapp.com/images/Mou_512.png)
+![Image Test](http://mouapp.com/images/Mou_512.png)
 
 ## 起因
 
