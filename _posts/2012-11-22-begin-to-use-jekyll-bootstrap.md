@@ -6,6 +6,9 @@ category: Blog
 tags: [blog, life, jekyllybootstrap, github]
 ---
 {% include JB/setup %}
+
+[Image Test](http://mouapp.com/images/Mou_512.png)
+
 ## 起因
 
 无意中发现[Jekyll Bootstrap](http://jekyllbootstrap.com/)，简单看了一下介绍，发现不管是安装还是使用都非常方便，于是决定尝试安装一下。
