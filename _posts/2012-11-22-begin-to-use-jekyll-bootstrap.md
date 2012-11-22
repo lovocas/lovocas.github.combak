@@ -3,7 +3,7 @@ layout: post
 title: "开始使用Jekyll Bootstrap"
 description: "开始使用Jekyll Bootstrap做为主要的博客管理工具，介绍一下安装方法"
 category: Blog
-tags: [blog,life]
+tags: [blog, life]
 ---
 {% include JB/setup %}
 ## 起因
