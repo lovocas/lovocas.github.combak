@@ -12,7 +12,7 @@ tags: [blog, life, jekyllybootstrap, github]
 
 ## 介绍
 
-[Jekyll Bootstrap](http://jekyllbootstrap.com/)是一个为开发者和设计者开发的一款轻型博客框架。此程序原生支持Github Pages服务，借助Pages服务，可以使博客免费的托管于Github平台。而在Git的管理之下，文章的修改历史，版本等都会完整的保存，所以，使用JB是非常有意义的。
+[Jekyll Bootstrap](http://jekyllbootstrap.com/)是一个为开发者和设计者开发的一款轻型博客框架。此程序原生支持Github Pages服务，借助Pages服务，可以使博客免费的托管于Github平台。而在Git的管理之下，文章的修改历史，版本等都会完整的保存，所以，使用[JB][JB]是非常有意义的。
 
 ## 准备
 
@@ -42,3 +42,5 @@ tags: [blog, life, jekyllybootstrap, github]
 ## 后记
 
 以后在使用过程中就可以用`rake post title='Post Title'`之类的发布就可以了。
+
+[JB]: http://jekyllbootstrap.com/ "Jekyll Bootstrap"
