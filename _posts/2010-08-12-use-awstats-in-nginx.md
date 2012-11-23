@@ -1,13 +1,9 @@
 --- 
 date: 2010-08-12 18:19:22 +08:00
 layout: post
-title: !binary |
-    5ZyoTE5NUOmHjOeahE5naW545a6J6KOFQXdzdGF0c+WIhuaekOaXpeW/lw==
-
-wordpress_id: 402
-wordpress_url: !binary |
-    aHR0cDovL3d3dy50b2J5Y24ub3JnL2IvP3A9NDAy
-
+title: 用awstats分析nginx日志
+categories: 系统管理
+tags: [nginx, awstats]
 ---
 运行需要PERL的支持，因为Nginx对PERL支持很弱，只能通过生成Html方式来输出统计。
 
