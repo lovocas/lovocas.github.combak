@@ -14,20 +14,19 @@ tags: [mysql, php]
     在插入新数据时MySQL返回1064错误，1064是语法错误。
 
 ### 相关代码：
-```
-$row = array('userId'=>$uid, 'orderId'=>$oid, 'money' => $money,
-      'change' => json_encode($change), 'createTime' => time());
-if ($this->db->insert('recharge', $row)) {
-    return true;
-}else {
-    return false;
-}
-```
+
+>$row = array('userId'=>$uid, 'orderId'=>$oid, 'money' => $money,
+>      'change' => json_encode($change), 'createTime' => time());
+>if ($this->db->insert('recharge', $row)) {
+>    return true;
+>}else {
+>    return false;
+>}
+
 这段代码会生成类似以下的SQL，并执行，出错1064错误
-```
-INSERT INTO recharge (userId, orderId, money, change, createTime)
- VALUES (2102103, '2012xxxxxxxxx', 200.00, '经json_encode编码的数组', 1326970280);
-```
+
+>INSERT INTO recharge (userId, orderId, money, change, createTime)
+>VALUES (2102103, '2012xxxxxxxxx', 200.00, '经json_encode编码的数组', 1326970280);
 
 ### 解决过程：
 
