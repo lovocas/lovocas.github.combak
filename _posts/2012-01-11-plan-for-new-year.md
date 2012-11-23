@@ -1,13 +1,8 @@
 --- 
 date: 2012-01-11 23:46:36 +08:00
 layout: post
-title: !binary |
-    5bm05Yid55qE5LiA54K554K55omT566X
-
-wordpress_id: 748
-wordpress_url: !binary |
-    aHR0cDovL2NudG9ieS5zaW5hYXBwLmNvbS8/cD03NDg=
-
+title: 新年新计划
+category: life
 ---
 前几天正式向公司提出了辞职，打算对这四年的工作做一个总结，迎接下一份工作的挑战。
 
