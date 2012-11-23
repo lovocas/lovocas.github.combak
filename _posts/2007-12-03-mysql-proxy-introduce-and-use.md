@@ -1,17 +1,7 @@
 --- 
 date: 2007-12-03 15:41:10 +08:00
 layout: post
-title: !binary |
-    TXlTUUwgUHJveHkgLSBNeVNRTOS7o+eQhueahOS7i+e7jeWPiuS4quS6uuS9
-    v+eUqOe7j+mqjCjovawp
-
-wordpress_id: 51
-wordpress_url: !binary |
-    aHR0cDovL3d3dy5sdjgwLmNuL3dwLzIwMDcvMTIvMDMvbXlzcWwtcHJveHkt
-    bXlzcWwlZTQlYmIlYTMlZTclOTAlODYlZTclOWElODQlZTQlYmIlOGIlZTcl
-    YmIlOGQlZTUlOGYlOGElZTQlYjglYWElZTQlYmElYmElZTQlYmQlYmYlZTcl
-    OTQlYTglZTclYmIlOGYlZTklYWElOGMlZTglYmQlYWMv
-
+title: MySQL-Proxy介绍和使用经验
 ---
 收到Mysql AB的邮件, 看到 Mysql Proxy 这个东西发布的时候,我很兴奋.
 因为当时我在弄一个项目,需要网通和电信两个镜像站点同时读写一个布署在电信服务器上的mysql数据库.中间有台双线的服务器可以做数据中转,试过很多方案都不理想.
