@@ -6,9 +6,7 @@ categories: 系统管理
 tags: [nginx, awstats]
 ---
 运行需要PERL的支持，因为Nginx对PERL支持很弱，只能通过生成Html方式来输出统计。
-
 首先，需要每日切割日志文件。提供个脚本给大家
-
 mv /usr/local/nginx/www.bun5.com.log /usr/local/nginx/logs/access5dft_`date +%Y%m%d`.log
 
 killall –s USR1 nginx #使用USR1参数通知Nginx进程切换日志文件
@@ -33,7 +31,8 @@ Example: /etc/httpd/httpd.conf
 Example: /usr/local/apache2/conf/httpd.conf
 Example: c:Program filesapache groupapacheconfhttpd.conf
 Config file path ('none' to skip web server setup):
-#> none  #因为我们这里用的是 Nginx，所以写 none，跳过。
+> none  
+因为我们这里用的是 Nginx，所以写 none，跳过。
 回车
 Your web server config file(s) could not be found.
 You will need to setup your web server manually to declare AWStats
@@ -44,26 +43,27 @@ File awstats.model.conf updated.
 -----> Need to create a new config file ?
 Do you want me to build a new AWStats config/profile
 file (required if first install) [y/N] ?
-#> y        #y 创建一个新的统计配置
+> y        
+y 创建一个新的统计配置
 回 车
 -----> Define config file name to create
 What is the name of your web site or profile analysis ?
 Example: www.mysite.com
 Example: demo
 Your web site, virtual server or profile name:
-#> www.5dft.com                #统计网站的域名
+> www.5dft.com                #统计网站的域名
 回车
 -----> Define config file path
 In which directory do you plan to store your config file(s) ?
 Default: /etc/awstats
 Directory path to store config file(s) (Enter for default):
-#>
+>
 使用默认直接回车，接下来便会出现以下的提示
 ----> Add update process inside a scheduler
 Sorry, configure.pl does not support automatic add to cron yet.
 You can do it manually by adding the following command to your cron:
 /usr/local/awstats/wwwroot/cgi-bin/awstats.pl -update -config=www.5dft.com
-#回头把该命令填入crontab 按指定时间执行
+回头把该命令填入crontab 按指定时间执行
 Or if you have several config files and prefer having only one command:
 /usr/local/awstats/tools/awstats_updateall.pl now
 Press ENTER to continue...                回车继续
@@ -75,7 +75,7 @@ Press ENTER to continue...                回车继续
 在那个文件找到统计的日志文件的路径
 LogFile="/var/log/httpd/mylog.log"
 改为
-LogFile="/opt/nginx/logs/access5dft_%YYYY-0%MM-0%DD-0.log
+LogFile="/opt/nginx/logs/access5dft_%YYYY-0%MM-0%DD-0.log"
 
 对应上边 Nginx 日志切割程序的所生成的目录存放结构，要注意 Awstats 的年月日格式的跟 Nginx 的写法有所不同。我们现在执行统计的顺序是：
 Nginx 产生日志 –> 日志切割 –> Nginx 继续产生日志 –> 另存切割日志 –> 交由Awstats统计 –> 生成结果
