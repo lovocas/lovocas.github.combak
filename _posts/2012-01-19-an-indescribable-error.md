@@ -26,8 +26,10 @@ if ($this->db->insert('recharge', $row)) {
 
 这段代码会生成类似以下的SQL，并执行，出错1064错误
 
->INSERT INTO recharge (userId, orderId, money, change, createTime)
->VALUES (2102103, '2012xxxxxxxxx', 200.00, '经json_encode编码的数组', 1326970280);
+{% highlight sql %}
+INSERT INTO recharge (userId, orderId, money, change, createTime)
+ VALUES (2102103, '2012xxxxxxxxx', 200.00, '经json_encode编码的数组', 1326970280);
+{% endhighlight %}
 
 ### 解决过程：
 
@@ -37,7 +39,7 @@ if ($this->db->insert('recharge', $row)) {
 但是我还是把特殊字符全转义了，可是还是相同提示。
     这时候我才注意到错误提示位置是从change开始的，这个时候才想起来change是MySQL中修改表的关键字，
 把change外用反引号框起来：
-```
+{% highlight php %}
 $row = array('userId'=>$uid, 'orderId'=>$oid, 'money' => $money,
       '`change`' => json_encode($change), 'createTime' => time());
 if ($this->db->insert('recharge', $row)) {
@@ -45,7 +47,7 @@ if ($this->db->insert('recharge', $row)) {
 }else {
     return false;
 }
-```
+{% endhighlight %}
 再执行，问题解决。
     这次出现这个问题让我注意到了MySQL在用反引号包含字段名和库表名的作法，在这之前我从来不用反引号
 包围库表名或者字段名，之所以没出现问题是因为我有意识的避开了关键字。
