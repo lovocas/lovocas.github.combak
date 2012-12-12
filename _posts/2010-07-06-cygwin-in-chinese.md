@@ -11,7 +11,7 @@ wordpress_url: !binary |
 ---
 cygwin 1.7版本中文配置方法：
 添加LANG=zh_CN环境变量，可在系统属性添加，也可以直接添加到cygwin的启动脚本里面，脚本修改后为：
-[code lang="plain"]
+{% highlight bat %}
     @echo off
     set CYGWIN=tty notitle glob
     set LANG=zh_CN
@@ -19,7 +19,7 @@ cygwin 1.7版本中文配置方法：
     chdir C:cygwinbin
 
     bash –login –i
-[/code]
+{% endhighlight %}
 主要添加了两个环境变量。
 
 这样就可以了，不用修改什么ls，less，甚至是inputrc都不用，直接就完美支持中文。
@@ -32,7 +32,7 @@ cygwin安装完成后，默认是没有设置好git的completion的。设置方�
 里面，也就是git的completion脚本。
 （1）拷贝/etc/bash-completion.d/git文件到某个地方，如：~/.git-completion.sh
 （2）添加以下内容到.bashrc或者.bash_profile，具体位置具体修改
-[code lang="bash"]
+{% highlight bash %}
     source ~/.git-completion.sh
-[/code]
+{% endhighlight %}
 重启cygwin即可。
