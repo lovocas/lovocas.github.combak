@@ -14,6 +14,7 @@ tags: [mysql, php]
     在插入新数据时MySQL返回1064错误，1064是语法错误。
 
 ### 相关代码：
+
 {% highlight php %}
 $row = array('userId'=>$uid, 'orderId'=>$oid, 'money' => $money,
       'change' => json_encode($change), 'createTime' => time());
