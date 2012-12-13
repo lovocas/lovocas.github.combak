@@ -13,7 +13,7 @@ type: post
 实施前提：
 主用数据库的配置里至少有：
 
-{% highlight conf %}
+{% highlight text %}
 [mysqld]
 log-bin=mysql-bin
 server-id=1
