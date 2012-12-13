@@ -8,11 +8,12 @@ tags:
 type: post
 ---
 不同编码的文本，是根据文本的前两个字节来定义其编码格式的。定义如下：
-
->ANSI：　　　　　　　　无格式定义；
->Unicode： 　　　　　　前两个字节为FFFE；
->Unicode big endian：　前两字节为FEFF；
->UTF-8：　 　　　　　　前两字节为EFBB；
+```
+ANSI：　　　　　　　　无格式定义；
+Unicode： 　　　　　　前两个字节为FFFE；
+Unicode big endian：　前两字节为FEFF；
+UTF-8：　 　　　　　　前两字节为EFBB；
+```
 -- 以上是在网上找到的内容，没再仔细找，比如GB2312/GB18030等，不过原理应该是一样的吧
 
 以下是我写的一段测试用的代码
