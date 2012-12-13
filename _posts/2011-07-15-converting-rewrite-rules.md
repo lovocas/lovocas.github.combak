@@ -4,15 +4,7 @@ title: Converting rewrite rules
 tags:
 - nginx
 - rewrite
-- 简单生活
-status: publish
 type: post
-published: true
-meta:
-  views: '64'
-  slider_hidetitle: 'off'
-  slider_image: http://cntoby-wordpress.stor.sinaapp.com/uploads/2012/01/20110413022039414.gif
-  _edit_last: '2'
 ---
 A redirect to a main site
 People who during their shared hosting life used to configure everything using only Apache’s .htaccess files, translate usually the following rules
