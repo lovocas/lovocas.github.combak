@@ -11,7 +11,7 @@ type: post
 ---
 公司要给会员群发一批邮件，没有找到合适的现成的工具，就自己写了一个，先是用Python写了一个，用起来感觉不是很爽，于是干脆用C重写了一个，好久没用C语言了，该是再拿起来的时候了，说起来还是C语言用着感觉好。
 
-源代码：(https://github.com/tobylee/mailadv)
+源代码：[https://github.com/tobylee/mailadv]
 
 直接下载：[mailadv-0.9.tar.bz2](http://www.tobycn.org/tc/usr/uploads/2011/02/1513920453.bz2)
 
@@ -25,7 +25,7 @@ sendmail.exe。
 
 功能说明：
 
-mailadv [-r] [-h] [-f < 发件邮箱>] [-t < 接收地址>] [-m < 邮件列表>] [-b < 邮件文件>] [-s < 邮件标题>] [-l < 日志文件>]
+mailadv ![-r] ![-h] ![-f < 发件邮箱>] [-t < 接收地址>] [-m < 邮件列表>] [-b < 邮件文件>] [-s < 邮件标题>] [-l < 日志文件>]
 
     -f    --from      发件邮箱. 默认: A.D.S <ads @ads.snowpear.com>
     -t    --to        收件邮箱，本设置可以和-m同时使用，但是本设置中的邮件发送情况不记入日志文件.
