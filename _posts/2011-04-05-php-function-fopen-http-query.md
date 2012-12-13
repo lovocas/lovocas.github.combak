@@ -24,7 +24,7 @@ fclose($fp);
 
 {% highlight php %}
 <?php
-$data = array ('foo' =&gt; 'bar');
+$data = array ('foo' => 'bar');
 $data = http_build_query($data);
 
 $opts = array (
