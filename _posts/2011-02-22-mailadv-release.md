@@ -9,11 +9,11 @@ tags:
 - 编程资料
 type: post
 ---
-<p>公司要给会员群发一批邮件，没有找到合适的现成的工具，就自己写了一个，先是用Python写了一个，用起来感觉不是很爽，于是干脆用C重写了一个，好久没用C语言了，该是再拿起来的时候了，说起来还是C语言用着感觉好。
+公司要给会员群发一批邮件，没有找到合适的现成的工具，就自己写了一个，先是用Python写了一个，用起来感觉不是很爽，于是干脆用C重写了一个，好久没用C语言了，该是再拿起来的时候了，说起来还是C语言用着感觉好。
 
-源代码：<a href="https://github.com/tobylee/mailadv" target="_blank">https://github.com/tobylee/mailadv</a>
+源代码：(https://github.com/tobylee/mailadv)
 
-直接下载：<a href="http://www.tobycn.org/tc/usr/uploads/2011/02/1513920453.bz2" title="mailadv-0.9.tar.bz2">mailadv-0.9.tar.bz2</a>
+直接下载：[mailadv-0.9.tar.bz2](http://www.tobycn.org/tc/usr/uploads/2011/02/1513920453.bz2)
 
 程序说明：
 
@@ -34,4 +34,4 @@ mailadv [-r] [-h] [-f < 发件邮箱>] [-t < 接收地址>] [-m < 邮件列表>]
     -s    --subject   邮件标题，此项是必须的.
     -l    --log       日志文件, . 默认: 当年目录下的maillog
     -r    --continue  继续执行上一次未发送完的邮件列表, 此功能以发送日志为判断依据.
-    -h    --help      显示帮助信息.</ads></p>
+    -h    --help      显示帮助信息.
