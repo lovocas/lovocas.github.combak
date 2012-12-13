@@ -6,10 +6,7 @@ tags:
 - file_get_content
 - fopen
 - php
-- 简单生活
-status: publish
 type: post
-published: true
 ---
 一直都是简单的使用fopen和file_get_content的函数，今天刚知道，这两个函数还能这么用，看来我火星了。
 用file_get_contents或者fopen、file、readfile等函数读取url的时候，会创建一个名为$http_response_header的变量来保存http响应的报头，使用fopen等函数打开的数据流信息可以用stream_get_meta_data来获取。
