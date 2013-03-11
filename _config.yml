@@ -10,14 +10,14 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 金鳞化龙
-tagline: 不能让每天的时间白白浪费
+title : TeaInCoffee
+tagline: 冷眼观人，冷耳听语，冷情当感，冷心思理
 author :
-  name : Toby Lee
-  email : cntoby@gmail.com
-  github : tobylee
-  twitter : cntoby
-  feedburner : cntoby
+  name : Jian Mou
+  email : la.moujian@gmail.com
+  github : lovocas
+  twitter : lovocas
+  feedburner : lovocas
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -27,7 +27,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://www.tobycn.org
+production_url : http://lovocas.github.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -82,7 +82,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : cntoby
+      short_name : ;pvpcas
     livefyre :
       site_id : 123
     intensedebate :
