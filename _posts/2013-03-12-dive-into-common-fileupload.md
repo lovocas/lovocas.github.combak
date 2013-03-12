@@ -2,15 +2,15 @@
 layout: post
 title: "Dive into common fileupload"
 description: ""
-category: 
-tags: []
+category: java
+tags: [java, fileupload]
 ---
 {% include JB/setup %}
 ###fileupload简介###
-apache common file upload 是一个用来接收表单形式post上传的库。
+apache common file upload 是一个用来接收表单形式上传的库。
 表单上传就是用POST方式上传，而且Conten Type是 “multipart/form-data”类型。
 
-我理解上的file upload 这个包主要时处理Servlet（还有Portlet）规范的HttpServletRequest,
+我理解上的file upload: 这个包主要是处理Servlet（还有Portlet）规范的HttpServletRequest,
 从request中打开一个流，并且按照[RFC 1867](http://www.ietf.org/rfc/rfc1867.txt)解析流，从
 流中接收上传的文件。
 
@@ -29,11 +29,12 @@ apache common file upload 是一个用来接收表单形式post上传的库。
 fileUpload会解析request并且把接收到的文件和字段放入FileItem对象中，FileItem是对Form中每一项的抽象
 所以在调用这个接口后接下来就应该遍历List,通过FileItem.isFormField();来判断是普通的字段（true）还是文件(false)
 值得注意的创建ServletFileUpload对象的时候需要传入一个FileItemFactory类型,它是一个接口，只有一个待实现的方法：
-  FileItem createItem(
-            String fieldName,
-            String contentType,
-            boolean isFormField,
-            String fileName);
+   
+   `FileItem createItem(
+        String fieldName,
+        String contentType,
+        boolean isFormField,
+        String fileName);
 
 *Streaming API*
 
